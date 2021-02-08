@@ -24,7 +24,7 @@ class LocationRequest extends FormRequest
     public function rules()
     {
         return [
-            'city'=>['required', 'string', 'unique:locations,city,'.id],
+            'city'=>['required', 'string', 'unique:locations,city'],
         ];
     }
 
