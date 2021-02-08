@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Models\Location;
 use App\Http\Requests\LocationRequest;
+use App\Models\Location;
 use Illuminate\Http\Request;
 
 class LocationController extends Controller
