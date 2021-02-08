@@ -77,13 +77,8 @@
                         <div class="form-group row">
                             <label for="account_id" class="col-sm-4 col-form-label">City</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control @error('city') is-invalid @enderror " id="city" placeholder="city" name="city">
+                                <input type="text" class="form-control" id="city" placeholder="city" name="city">
                             </div>
-                            @error('city')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
                         </div>
                         <button type="submit" class="btn btn-primary justify-content-start">Add</button>
                     </form>
