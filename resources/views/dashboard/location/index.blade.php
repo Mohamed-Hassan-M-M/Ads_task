@@ -97,6 +97,8 @@
     <script>
         $(document).ready(function() {
             $("#example").DataTable();
+            if({{$errors->has('city')}})
+                $('#location').modal('show');
         } );
     </script>
 @endsection
