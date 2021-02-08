@@ -33,7 +33,7 @@ class LocationRequest extends FormRequest
         return [
             'required' => 'The :attribute field is required.',
             'string' => 'The :attribute field must be string.',
-            'unique' => 'The :attribute has already been taken.',
+            'city.unique' => 'The :attribute has already been taken.',
         ];
     }
 }
