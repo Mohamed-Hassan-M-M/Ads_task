@@ -39,7 +39,7 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="title">Title</label>
-                                        <input type="text" class="form-control @error('title') is-invalid @enderror " value="" id="title" placeholder="Enter title" name="title">
+                                        <input type="text" class="form-control @error('title') is-invalid @enderror " value="{{old('title')}}" id="title" placeholder="Enter title" name="title">
                                         @error('title')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -48,7 +48,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="description">Description</label>
-                                        <input type="text" class="form-control @error('description') is-invalid @enderror " value="" id="description" placeholder="Enter description" name="description">
+                                        <input type="text" class="form-control @error('description') is-invalid @enderror " value="{{old('description')}}" id="description" placeholder="Enter description" name="description">
                                         @error('description')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
