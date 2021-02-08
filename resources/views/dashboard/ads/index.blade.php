@@ -28,6 +28,7 @@
                         <a class="btn btn-lg btn-success mb-3" href="{{route("admin.advertisement.create")}}"><i class="fa fa-plus"></i> Add Advertisement </a>
                     </div>
                 </div>
+                @include('dashboard.includes.alert.message')
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
